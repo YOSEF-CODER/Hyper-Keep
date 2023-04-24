@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+    <link rel="icon" href="./keeps.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"></link>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Hyper keep</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                <img src="./keeps.png" alt="">
+                <h1>Hyper Keep </h1>
+            </div>
+
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                <input type="text" placeholder="search">
+            </div>
+
+            <h2 class="title">
+                Hello,<input type="text" placeholder="Name here..." id="nameInput">
+            </h2>
+
+        </nav>
+    </header>
+
+    <div class="modal">
+        <div class="modal-content">
+            <input class="modal-title" placeholder="Title" type="text">
+            <input class="modal-text" placeholder="Take a note..." type="text">
+            <span class="modal-close-button">Close</span>
+        </div>
+    </div>
+
+    <main>
+
+        <div id="form-container">
+            <form id="form" autocomplete="off">
+                <input id="note-title" placeholder="Title" type="text">
+                <input id="note-text" placeholder="Take a note..." type="text">
+                <div id="form-buttons">
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="button" id="form-close-button">Close</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="notes"></div>
+
+        <div id="placeholder">
+            <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline">
+            <p id="placeholder-text">Notes you add appear here</p>
+        </div>
+
+        <div id="color-tooltip">
+            <div data-color="white" class="color-option white"></div>
+            <div data-color="blue" class="color-option blue"></div>
+            <div data-color="green" class="color-option green"></div>
+            <div data-color="yellow" class="color-option yellow"></div>
+            <div data-color="orange" class="color-option orange"></div>
+            <div data-color="pink" class="color-option pink"></div>
+        </div>
+
+        <!-- ADD YOUR CODE HERE -->
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
